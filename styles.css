@@ -1,0 +1,250 @@
+/* ============================================
+   RESET Y ESTILOS GLOBALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f9f7 0%, #e8f5f0 100%);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+   ============================================ */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 100, 80, 0.1);
+    overflow: hidden;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+    background: linear-gradient(135deg, #00a86b 0%, #008c54 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ============================================
+   CONTENIDO PRINCIPAL
+   ============================================ */
+main {
+    padding: 30px;
+}
+
+/* ============================================
+   SECCIONES
+   ============================================ */
+.section {
+    margin-bottom: 30px;
+    border-left: 4px solid #00a86b;
+    padding-left: 20px;
+}
+
+.section h2 {
+    color: #008c54;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* ============================================
+   NÚMERO DE PASO
+   ============================================ */
+.step-number {
+    background: #00a86b;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #00a86b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #008c54;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 168, 107, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   INPUTS Y FORMULARIOS
+   ============================================ */
+input {
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00a86b;
+    box-shadow: 0 0 5px rgba(0, 168, 107, 0.2);
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+/* ============================================
+   CONTENEDOR DE RESULTADOS
+   ============================================ */
+.resultado-container {
+    background: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.resultado-container h3 {
+    color: #008c54;
+    margin-bottom: 10px;
+}
+
+.resultado-container h3 {
+    color: #008c54;
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #2d2d2d;
+    color: #00d96f;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background: #f5f5f5;
+    padding: 15px 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
+.success {
+    color: #00a86b;
+}
+
+.error {
+    color: #d32f2f;
+}
+
+/* ============================================
+   RESPONSIVE (Mobile)
+   ============================================ */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .section h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

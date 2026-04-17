@@ -4,29 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumo de API con fetch y Axios</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        input, button { margin: 5px; padding: 8px; }
-        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; }
-    </style>
 </head>
 <body>
-    <h1>Consumo de API de estudiantes</h1>
-    
-    <h2>Consultar estudiantes</h2>
-    <button onclick="getStudentsFetch()">GET con fetch</button>
-    <button onclick="getStudentsAxios()">GET con Axios</button>
+    <div class="container">
+        <header>
+            <h1>Consumo de API REST</h1>
+            <p>Práctica 5: fetch() vs Axios</p>
+        </header>
 
-    <h2>Registrar estudiante</h2>
-    <input type="text" id="name" placeholder="Nombre">
-    <input type="email" id="email" placeholder="Correo">
-    <input type="number" id="age" placeholder="Edad">
-    <button onclick="createStudentFetch()">POST con fetch</button>
-    <button onclick="createStudentAxios()">POST con Axios</button>
+        <main>
+            <!-- PASO 1: GET con fetch -->
+            <div class="section">
+                <h2>
+                    <div class="step-number">1</div>
+                    Consultar estudiantes con fetch()
+                </h2>
+                <p>Realiza una petición GET a la API usando fetch()</p>
+                <div class="button-group">
+                    <button onclick="getStudentsFetch()">GET con fetch()</button>
+                </div>
+            </div>
 
-    <h2>Resultado</h2>
-    <pre id="resultado"></pre>
+            <!-- PASO 2: GET con Axios -->
+            <div class="section">
+                <h2>
+                    <div class="step-number">2</div>
+                    Consultar estudiantes con Axios
+                </h2>
+                <p>Realiza la misma petición GET usando Axios</p>
+                <div class="button-group">
+                    <button onclick="getStudentsAxios()">GET con Axios</button>
+                </div>
+            </div>
+
+            <!-- PASO 3: POST con fetch -->
+            <div class="section">
+                <h2>
+                    <div class="step-number">3</div>
+                    Registrar estudiante con fetch()
+                </h2>
+                <p>Completa el formulario y registra un nuevo estudiante usando fetch()</p>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Nombre completo">
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                    <input type="number" id="age" placeholder="Edad">
+                </div>
+                <div class="button-group">
+                    <button onclick="createStudentFetch()">POST con fetch()</button>
+                </div>
+            </div>
+
+            <!-- PASO 4: POST con Axios -->
+            <div class="section">
+                <h2>
+                    <div class="step-number">4</div>
+                    Registrar estudiante con Axios
+                </h2>
+                <p>Completa el formulario y registra otro estudiante usando Axios</p>
+                <div class="form-group">
+                    <input type="text" id="name2" placeholder="Nombre completo">
+                    <input type="email" id="email2" placeholder="Correo electrónico">
+                    <input type="number" id="age2" placeholder="Edad">
+                </div>
+                <div class="button-group">
+                    <button onclick="createStudentAxios()">POST con Axios</button>
+                </div>
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="resultado-container">
+                <h3>Resultado de la operación</h3>
+                <pre id="resultado">Aquí aparecerá el resultado de cada operación...</pre>
+            </div>
+        </main>
+    </div>
 
     <script src="app.js"></script>
 </body>
