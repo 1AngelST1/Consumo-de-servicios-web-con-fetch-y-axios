@@ -1,35 +1,13 @@
-# 🌿 Práctica 5: Consumo de Servicios Web con fetch() y Axios
+# Práctica 5: Consumo de Servicios Web con fetch() y Axios
 
-**Universidad:** BUAP - FCC  
-**Materia:** Servicios Web  
-**Tema:** Consumo de APIs REST mediante peticiones GET y POST  
-**Fecha:** Abril 2026
-
----
-
-## 📋 Objetivo
-
+## Objetivo
 Desarrollar una página web que consuma un servicio REST mediante peticiones **GET** y **POST** usando dos herramientas diferentes:
 - **fetch()**: API nativa basada en promesas
 - **Axios**: Librería que automatiza la conversión de JSON
 
 Al finalizar, podrás comparar las diferencias entre ambas herramientas en el manejo de respuestas, conversión de datos JSON y control de errores.
 
----
-
-## 🎯 Resultado Esperado
-
-Una página interactiva que permita:
-
-✅ **Consultar** una lista de estudiantes usando fetch()  
-✅ **Consultar** la misma lista usando Axios  
-✅ **Registrar** un nuevo estudiante usando fetch()  
-✅ **Registrar** otro estudiante usando Axios  
-✅ **Comparar** el comportamiento de ambas opciones
-
----
-
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 practica5-consumo-de-servicios-web/
@@ -41,9 +19,7 @@ practica5-consumo-de-servicios-web/
 └── README.md          # Este archivo
 ```
 
----
-
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 ### Paso 1: Instalar dependencias
 ```bash
@@ -65,7 +41,7 @@ Abre `index.html` en tu navegador web.
 
 ---
 
-## 📖 Funcionamiento del Proyecto
+##  Funcionamiento del Proyecto
 
 El proyecto está dividido en **4 pasos claros**:
 
@@ -97,7 +73,7 @@ El proyecto está dividido en **4 pasos claros**:
 
 ---
 
-## 🔄 Diferencias Clave: fetch() vs Axios
+##  Diferencias Clave: fetch() vs Axios
 
 | Característica | fetch() | Axios |
 |---|---|---|
@@ -112,7 +88,7 @@ El proyecto está dividido en **4 pasos claros**:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 ### Backend
 - **Node.js**: Entorno de ejecución
@@ -128,7 +104,7 @@ El proyecto está dividido en **4 pasos claros**:
 
 ---
 
-## 📊 Estructura de Datos
+##  Estructura de Datos
 
 ### Modelo de Estudiante
 
@@ -157,21 +133,7 @@ El proyecto está dividido en **4 pasos claros**:
 ```
 **Respuesta:** El nuevo estudiante creado con su ID
 
----
-
-## 🎨 Características del Diseño
-
-✨ **Paleta de color verde profesional**  
-✨ **Interfaz intuitiva y clara**  
-✨ **4 pasos bien diferenciados**  
-✨ **Resultados mostrados en tiempo real**  
-✨ **Validación de formularios**  
-✨ **Mensajes de error descriptivos**  
-✨ **Timestamps en cada operación**  
-
----
-
-## 💡 Conceptos Clave Explicados
+##  Conceptos Clave Explicados
 
 ### ¿Qué es una API REST?
 Una forma de comunicación entre cliente y servidor usando URLs y métodos HTTP (GET, POST, PUT, DELETE).
@@ -188,9 +150,8 @@ Mecanismo que permite que aplicaciones web de un origen accedan a recursos de ot
 ### ¿Qué es JSON?
 Formato de intercambio de datos ligero y legible basado en texto.
 
----
 
-## 📝 Códigos de Respuesta HTTP
+##  Códigos de Respuesta HTTP
 
 | Código | Significado | Uso |
 |---|---|---|
@@ -200,69 +161,17 @@ Formato de intercambio de datos ligero y legible basado en texto.
 | **404** | Not Found | Recurso no existe |
 | **500** | Server Error | Error en el servidor |
 
----
 
-## 🧪 Pruebas Recomendadas
+##  Solución de Problemas
 
-1. **Abre la página** → Debe verse con diseño verde
-2. **Haz GET con fetch** → Verás 2 estudiantes registrados
-3. **Haz GET con Axios** → Mismos estudiantes, diferente método
-4. **Registra un estudiante con fetch** → Llena el primer formulario
-5. **Registra otro con Axios** → Llena el segundo formulario
-6. **Verifica registros** → Haz GET nuevamente para ver los nuevos
-
----
-
-## 🐛 Solución de Problemas
-
-### ❌ "Cannot GET /api/students"
+###  "Cannot GET /api/students"
 - El servidor no está corriendo. Ejecuta `node server.js`
 
-### ❌ "CORS Error"
+###  "CORS Error"
 - El servidor no tiene CORS habilitado. Verifica `server.js`
 
-### ❌ "No recibe datos del formulario"
+###  "No recibe datos del formulario"
 - Verifica que los IDs de inputs coincidan en `index.html` y `app.js`
 
-### ❌ "El navegador muestra error en consola"
+###  "El navegador muestra error en consola"
 - Abre DevTools (F12) y revisa la consola para detalles del error
-
----
-
-## 📚 Recursos Adicionales
-
-- [MDN - fetch() API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-- [Axios Documentation](https://axios-http.com/)
-- [Express.js Guide](https://expressjs.com/)
-- [CORS Explained](https://developer.mozilla.org/es/docs/Web/HTTP/CORS)
-
----
-
-## ✅ Checklist para la Presentación
-
-- [ ] Servidor ejecutándose sin errores
-- [ ] Página carga con diseño verde profesional
-- [ ] GET con fetch muestra estudiantes
-- [ ] GET con Axios muestra mismo resultado
-- [ ] POST con fetch registra nuevo estudiante
-- [ ] POST con Axios registra otro estudiante
-- [ ] Validaciones funcionan correctamente
-- [ ] Errores se muestran claramente
-- [ ] Código está bien comentado y es fácil de entender
-
----
-
-## 👨‍💻 Autor
-
-**Angel** | Estudiante de Servicios Web  
-FCC BUAP | 2026
-
----
-
-## 📄 Licencia
-
-Este proyecto es de propósito educativo y forma parte de la Práctica 5 de la materia Servicios Web en BUAP.
-
----
-
-**¡Listo para presentar! 🚀**
