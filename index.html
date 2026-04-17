@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API con fetch y Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin: 5px; padding: 8px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Consumo de API de estudiantes</h1>
+    
+    <h2>Consultar estudiantes</h2>
+    <button onclick="getStudentsFetch()">GET con fetch</button>
+    <button onclick="getStudentsAxios()">GET con Axios</button>
+
+    <h2>Registrar estudiante</h2>
+    <input type="text" id="name" placeholder="Nombre">
+    <input type="email" id="email" placeholder="Correo">
+    <input type="number" id="age" placeholder="Edad">
+    <button onclick="createStudentFetch()">POST con fetch</button>
+    <button onclick="createStudentAxios()">POST con Axios</button>
+
+    <h2>Resultado</h2>
+    <pre id="resultado"></pre>
+
+    <script src="app.js"></script>
+</body>
+</html>
